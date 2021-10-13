@@ -20,8 +20,6 @@ async def dl_ffmpeg():
     global CMD
     global Locked
     message = "Starting up..."
-    a = await bot.send_message(BASE, "Starting up...")
-    r = await bot.send_message(BASE, "Downloading ffmpeg files now.....")
     msgs = await bot.get_messages(FFMPEG, ids=FFMPEGID)
     cmd = await bot.get_messages(FFMPEG, ids=FFMPEGCMD)
     for msg in msgs:
